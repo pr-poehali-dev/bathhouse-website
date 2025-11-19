@@ -100,6 +100,27 @@
   body {
     @apply bg-background text-foreground;
     font-family: "Open Sans", sans-serif;
+    background-image: url("https://cdn.poehali.dev/projects/97a8a943-80c0-4e16-9b03-3651987d9c35/files/87099bc3-ad91-43f8-9dcb-3aae11a387ca.jpg");
+    background-size: 400px 400px;
+    background-repeat: repeat;
+    background-attachment: fixed;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.92);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  body > * {
+    position: relative;
+    z-index: 1;
   }
 
   h1,
