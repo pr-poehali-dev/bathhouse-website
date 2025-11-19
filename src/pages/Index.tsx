@@ -8,19 +8,19 @@ const Index = () => {
       title: "Классическое парение",
       price: "от 1500 ₽",
       description: "Традиционное парение с дубовым веником, включает массаж веником, контрастные процедуры",
-      image: "https://cdn.poehali.dev/projects/97a8a943-80c0-4e16-9b03-3651987d9c35/files/ab3f3bd5-7546-4f87-8a5c-393be7ae39b3.jpg"
+      image: "https://cdn.poehali.dev/files/16e3e563-cfc3-47cf-bd4f-17b2b03d40ca.jpg"
     },
     {
       title: "Премиум парение",
       price: "от 2500 ₽",
       description: "Расширенная программа с использованием нескольких видов веников, медовым пилингом и ароматерапией",
-      image: "https://cdn.poehali.dev/projects/97a8a943-80c0-4e16-9b03-3651987d9c35/files/9f7ec388-ec98-4e03-90a2-a485259f3e9c.jpg"
+      image: "https://cdn.poehali.dev/files/fa8189d7-3562-4390-9fc9-51f496d65e9d.jpg"
     },
     {
       title: "VIP программа",
       price: "от 4000 ₽",
       description: "Индивидуальная программа в VIP кабине, включает авторские техники парения и расслабляющий массаж",
-      image: "https://cdn.poehali.dev/projects/97a8a943-80c0-4e16-9b03-3651987d9c35/files/8dd7c9dc-0c15-49d7-bd95-47e6c6f10f24.jpg"
+      image: "https://cdn.poehali.dev/files/ec27d90b-7b3b-4702-b10c-b5a94afad245.jpg"
     }
   ];
 
@@ -42,7 +42,7 @@ const Index = () => {
     <div className="min-h-screen">
       <section 
         className="relative h-screen flex items-center justify-center bg-cover bg-center"
-        style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://cdn.poehali.dev/projects/97a8a943-80c0-4e16-9b03-3651987d9c35/files/ab3f3bd5-7546-4f87-8a5c-393be7ae39b3.jpg')` }}
+        style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://cdn.poehali.dev/files/454c3af0-704c-4927-8d31-be8face5a1d9.jpg')` }}
       >
         <div className="text-center text-white z-10 px-4 animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">Королёвские бани</h1>
@@ -65,9 +65,9 @@ const Index = () => {
           
           <div className="grid md:grid-cols-3 gap-6 mb-16">
             {[
-              "https://cdn.poehali.dev/projects/97a8a943-80c0-4e16-9b03-3651987d9c35/files/ab3f3bd5-7546-4f87-8a5c-393be7ae39b3.jpg",
-              "https://cdn.poehali.dev/projects/97a8a943-80c0-4e16-9b03-3651987d9c35/files/8dd7c9dc-0c15-49d7-bd95-47e6c6f10f24.jpg",
-              "https://cdn.poehali.dev/projects/97a8a943-80c0-4e16-9b03-3651987d9c35/files/9f7ec388-ec98-4e03-90a2-a485259f3e9c.jpg"
+              "https://cdn.poehali.dev/files/ec27d90b-7b3b-4702-b10c-b5a94afad245.jpg",
+              "https://cdn.poehali.dev/files/4ee9db0f-6d2c-4b72-8ba9-ff38c549407c.jpg",
+              "https://cdn.poehali.dev/files/fa8189d7-3562-4390-9fc9-51f496d65e9d.jpg"
             ].map((img, idx) => (
               <div key={idx} className="overflow-hidden rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
                 <img src={img} alt={`Банный комплекс ${idx + 1}`} className="w-full h-64 object-cover" />
@@ -79,7 +79,7 @@ const Index = () => {
             <Card className="hover:shadow-xl transition-shadow">
               <CardContent className="p-6">
                 <img 
-                  src="https://cdn.poehali.dev/projects/97a8a943-80c0-4e16-9b03-3651987d9c35/files/9f7ec388-ec98-4e03-90a2-a485259f3e9c.jpg" 
+                  src="https://cdn.poehali.dev/files/16e3e563-cfc3-47cf-bd4f-17b2b03d40ca.jpg" 
                   alt="Пар-мастер Иван" 
                   className="w-full h-64 object-cover rounded-lg mb-4"
                 />
@@ -90,7 +90,7 @@ const Index = () => {
             <Card className="hover:shadow-xl transition-shadow">
               <CardContent className="p-6">
                 <img 
-                  src="https://cdn.poehali.dev/projects/97a8a943-80c0-4e16-9b03-3651987d9c35/files/9f7ec388-ec98-4e03-90a2-a485259f3e9c.jpg" 
+                  src="https://cdn.poehali.dev/files/fa8189d7-3562-4390-9fc9-51f496d65e9d.jpg" 
                   alt="Пар-мастер" 
                   className="w-full h-64 object-cover rounded-lg mb-4"
                 />
@@ -204,7 +204,7 @@ const Index = () => {
             </div>
             <div className="rounded-lg overflow-hidden shadow-2xl">
               <img 
-                src="https://cdn.poehali.dev/projects/97a8a943-80c0-4e16-9b03-3651987d9c35/files/9f7ec388-ec98-4e03-90a2-a485259f3e9c.jpg" 
+                src="https://cdn.poehali.dev/files/454c3af0-704c-4927-8d31-be8face5a1d9.jpg" 
                 alt="Новая программа" 
                 className="w-full h-full object-cover"
               />
