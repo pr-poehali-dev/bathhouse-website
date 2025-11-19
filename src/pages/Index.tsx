@@ -1,8 +1,11 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
+import LoadingScreen from "@/components/LoadingScreen";
 
 const Index = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
   const services = [
     {
       title: "Классическое парение",
@@ -39,7 +42,9 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen">
+    <>
+      {!isLoaded && <LoadingScreen onLoadComplete={() => setIsLoaded(true)} />}
+      <div className="min-h-screen">
       <section 
         className="relative h-screen flex items-center justify-center bg-cover bg-center"
         style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://cdn.poehali.dev/files/454c3af0-704c-4927-8d31-be8face5a1d9.jpg')` }}
@@ -303,6 +308,7 @@ const Index = () => {
         </div>
       </footer>
     </div>
+    </>
   );
 };
 
